@@ -8,6 +8,26 @@ body,
   /* background color: #RGB(255,0,0) */
 }
 
-.card {
+.container {
+  width: 90vw;
+  height: 2rem auto;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  height: 40rem; /*standardizing*/
+  width: 30%; /* take up % of the parent */
+  border: 2px solid black;
+  display: flex;
+  margin: 3rem 0;
+  flex-direction: column;
+  align-items: center;
+  background-image: ;
+}
+
+.card-image {
+  width: 400px;
+  object-fit: cover;
 }
