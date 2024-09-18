@@ -1,19 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Federo&display=swap");
+
 html,
 body,
 * {
   font-size: 10px;
   padding: 0;
   margin: 0;
+  text-align: center;
   box-sizing: border-box;
   /* background color: #RGB(255,0,0) */
 }
 
+h1 {
+  font-size: 70px;
+  font-family: Federo;
+}
+
 .container {
-  width: 90vw;
+  width: 95vw;
   height: 2rem auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: auto;
 }
 
 .card {
@@ -24,10 +33,11 @@ body,
   margin: 3rem 0;
   flex-direction: column;
   align-items: center;
-  background-image: ;
 }
 
 .card-image {
-  width: 400px;
+  height: 40rem; /*standardizing*/
+  width: 100%;
   object-fit: cover;
+  background-size: cover;
 }
