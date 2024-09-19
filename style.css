@@ -8,12 +8,13 @@ body,
   margin: 0;
   text-align: center;
   box-sizing: border-box;
-  /* background color: #RGB(255,0,0) */
+  background-image: url("https://wallpaperset.com/w/full/b/4/2/51283.jpg");
 }
 
 h1 {
-  font-size: 70px;
+  font-size: 80px;
   font-family: Federo;
+  margin: 20px;
 }
 
 .container {
@@ -23,26 +24,57 @@ h1 {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: auto;
+  border-radius: 20px;
 }
 
 .card {
   height: 40rem; /*standardizing*/
   width: 30%; /* take up % of the parent */
-  border: 2px solid black;
+  border: 2px;
   display: flex;
   margin: 3rem 0;
   flex-direction: column;
   align-items: center;
 }
 
+@media screen and (max-width: 900px) {
+  .card {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    width: 100%;
+  }
+  .container {
+    flex-direction: column;
+  }
+}
 .card-image {
   height: 40rem; /*standardizing*/
   width: 100%;
   object-fit: cover;
-  background-size: cover;
-  
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 #b3d9ff;
 }
 
 #blue-one {
-  object-position: 25% 75%;
+  object-position: 30% 75%;
+  transition: transform 0.2s;
+}
+#blue-one:hover {
+  transform: scale(1.5);
+}
+
+#other-one {
+  object-position: 35%;
+}
+
+#blue-two {
+  object-position: 65%;
+}
+
+#other-two {
+  object-position: 20% 75%;
 }
