@@ -32,7 +32,7 @@ h1 {
   width: 30%; /* take up % of the parent */
   border: 2px;
   display: flex;
-  margin: 3rem 0;
+  margin: 5rem 0;
   flex-direction: column;
   align-items: center;
 }
@@ -55,8 +55,8 @@ h1 {
   height: 40rem; /*standardizing*/
   width: 100%;
   object-fit: cover;
-  padding: 10px;
-  box-shadow: 0 4px 8px 0 #b3d9ff;
+  padding: 10%;
+  box-shadow: 0px 3px 8px 0 #6d8cb4;
 }
 
 #blue-one {
