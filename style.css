@@ -35,6 +35,34 @@ h1 {
   margin: 5rem 0;
   flex-direction: column;
   align-items: center;
+  position: relative;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0; /* Place it behind the content */
+  background-image: url('https://www.theasburycollegian.com/wp-content/uploads/2023/02/via-Getty-Images.jpeg');
+  background-size: cover; /* Adjust to your needs */
+  filter:blur(20%);
+  opacity: 0.6; /* Optional: Adjust the transparency */
+}
+
+card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1; 
+  background-image: url('https://www.theasburycollegian.com/wp-content/uploads/2023/02/via-Getty-Images.jpeg');
+  background-color: rgba(0,0,0,0);
+
 }
 
 @media screen and (max-width: 900px) {
@@ -52,12 +80,50 @@ h1 {
   }
 }
 .card-image {
+  z-index: 2;
   height: 40rem; /*standardizing*/
   width: 100%;
   object-fit: cover;
   padding: 10%;
-  box-shadow: 0px 3px 8px 0 #6d8cb4;
+  box-shadow: 0px 3px 8px 0 #162941;
 }
+
+#blue-bg-one {
+  background-color: rgba(0, 64, 255, 0.65); 
+}
+
+#other-bg-one {
+  background-color: rgba(255, 204, 0, 0.65); 
+}
+
+#blue-bg-two {
+  background-color: rgba(3, 177, 246, 0.65); 
+}
+
+#other-bg-two {
+  background-color: rgba(10, 255, 67, 0.65); 
+}
+
+#blue-bg-three {
+  background-color: rgba(70, 181, 255, 0.65); 
+}
+
+#other-bg-three {
+  background-color: rgba(250, 0, 0, 0.65); 
+}
+
+#blue-bg-four {
+  background-color: rgba(74, 219, 255, 0.65); 
+}
+
+#other-bg-four {
+  background-color: rgba(255, 242, 0, 0.65); 
+}
+
+#blue-bg-five {
+  background-color: rgba(63, 0, 236, 0.65); 
+}
+
 
 #blue-one {
   object-position: 30% 75%;
