@@ -17,6 +17,7 @@ h1 {
   font-family: Federo;
   width: 100%;
   background-color: rgb(0, 0, 0);
+  padding-top: 5%;
   padding: 5%;
   color: rgb(248, 187, 2);
 }
@@ -40,12 +41,12 @@ h2{
 /* Sun container */
 .sun {
   position: absolute;
-  top: 30%; /* Start at the middle of the screen */
+  top: 2%; /* Start at the middle of the screen */
   left: 0; /* Start from the left */
   width: 200px; /* Adjust size if needed */
   height: 100px;
   animation: zigzag-animation 5s linear infinite; /* Duration and timing function */
-  z-index: -1;
+  z-index: 0;
 }
 
 /* Sun image styling */
@@ -219,16 +220,30 @@ p {
 
 #blue-bg-five {
   background-color: rgba(41, 120, 255, 0.65);
+
 }
+
 
 #other-bg-five {
   background-color: rgba(26, 201, 90, 0.65);
+  transition: 0.3s;
+}
+#other-bg-five:hover {
+  animation: pulse 1s infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(.9);
+  }
+    100% {
+    transform: scale(1);
+  }
 }
 
-#other-bg-five:hover {
-  transition: perspective(400px) rotateY(10deg);
-  transform: transform 0.3s ease;
-}
+
 
 #blue-bg-six {
   background-color: rgba(119, 173, 255, 0.65);
@@ -252,7 +267,12 @@ p {
 
 #other-bg-eight {
   background-color: rgba(62, 0, 176, 0.65);
+  transition: border-color 0.3s ease-in-out;
 }
+#other-bg-eight:hover {
+  border: 5px solid white;
+
+
 
 #blue-one{
   object-position: 45%;
