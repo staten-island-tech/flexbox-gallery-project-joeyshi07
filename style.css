@@ -15,8 +15,16 @@ body,
 h1 {
   font-size: 80px;
   font-family: Federo;
-  margin: 20px;
-  background-color: antiquewhite;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  padding: 5%;
+  color: rgb(248, 187, 2);
+}
+
+h2{
+  font-size: 20px;
+  font-family: 'EB Garamond';
+  padding:1%;
 }
 
 .container {
@@ -27,12 +35,13 @@ h1 {
   justify-content: space-between;
   margin: auto;
   padding: 5%;
-  background-color: aliceblue;
+  background-color: rgb(201, 221, 240);
 }
 
-.context {
+.color {
   background-color: rgb(0, 0, 0);
-  color: white;
+  font-family: 'EB Garamond';
+  color: rgb(248, 187, 2);;
   font-size: 20px;
   padding: 10px;
   width: 100%;
@@ -40,8 +49,9 @@ h1 {
 }
 
 p {
-  font-size: 20px;
+  font-size: 12px;
   background-color: rgb(0, 0, 0);
+  font-family:'Gill Sans',sans-serif;
   width: 100%;
   z-index: 2;
   padding: 10px;
@@ -56,8 +66,7 @@ p {
   flex-direction: column;
   align-items: center;
   position: relative;
-  box-shadow: 0px 3px 8px 0 #162941;
-  border-radius: 5px;
+  box-shadow: 0px 3px 8px 0 #22446e;
 }
 
 .card::before {
@@ -67,11 +76,11 @@ p {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 1; /* Place it behind the content */
+  z-index: 1; 
   background-image: url("https://www.theasburycollegian.com/wp-content/uploads/2023/02/via-Getty-Images.jpeg");
-  background-size: cover; /* Adjust to your needs */
+  background-size: cover; 
   filter: blur(20%);
-  opacity: 0.6; /* Optional: Adjust the transparency */
+  opacity: 0.5;
 }
 
 @media screen and (max-width: 1050px) {
@@ -103,57 +112,117 @@ p {
 }
 
 #blue-bg-one {
-  background-color: rgba(0, 64, 255, 0.65);
+  background-color: rgba(0, 97, 252, 0.65);
+  transition: transform 0.2s;
+}
+
+#blue-bg-one:hover {
+  transform: scale(1.1);
 }
 
 #other-bg-one {
-  background-color: rgba(255, 204, 0, 0.65);
+  background-color: rgba(82, 200, 109, 0.65);
 }
 
 #blue-bg-two {
-  background-color: rgba(3, 177, 246, 0.65);
+  background-color: rgba(57, 196, 255, 0.65);
 }
 
 #other-bg-two {
-  background-color: rgba(10, 255, 67, 0.65);
+  background-color: rgba(255, 225, 0, 0.65);
 }
 
 #blue-bg-three {
-  background-color: rgba(70, 181, 255, 0.65);
+  background-color: rgba(86, 214, 253, 0.65);
 }
 
 #other-bg-three {
-  background-color: rgba(250, 0, 0, 0.65);
+  background-color: rgba(181, 14, 14, 0.65);
 }
 
 #blue-bg-four {
-  background-color: rgba(74, 219, 255, 0.65);
+  background-color: rgba(20, 102, 255, 0.65);
 }
 
 #other-bg-four {
-  background-color: rgba(255, 242, 0, 0.65);
+  background-color: rgba(255, 0, 0, 0.65);
 }
 
 #blue-bg-five {
-  background-color: rgba(63, 0, 236, 0.65);
+  background-color: rgba(41, 120, 255, 0.65);
 }
 
-#blue-one {
-  object-position: 30% 75%;
-  transition: transform 0.2s;
-}
-#blue-one:hover {
-  transform: scale(1.5);
+#other-bg-five {
+  background-color: rgba(26, 201, 90, 0.65);
 }
 
-#other-one {
-  object-position: 35%;
+#blue-bg-six {
+  background-color: rgba(119, 173, 255, 0.65);
+}
+
+#other-bg-six {
+  background-color: rgba(78, 161, 0, 0.65);
+}
+
+#blue-bg-seven {
+  background-color: rgba(70, 181, 255, 0.65);
+}
+
+#other-bg-seven {
+  background-color: rgba(230, 161, 0, 0.65);
+}
+
+#blue-bg-eight {
+  background-color: rgba(74, 219, 255, 0.65);
+}
+
+#other-bg-eight {
+  background-color: rgba(62, 0, 176, 0.65);
+}
+
+#blue-one{
+  object-position: 45%;
 }
 
 #blue-two {
-  object-position: 65%;
+  object-position: 25%;
+  transition: transform 0.2s;
+}
+#blue-two:hover {
+  transform: scale(1.5);
 }
 
 #other-two {
-  object-position: 20% 75%;
+  object-position: 40%;
+}
+
+#blue-three {
+  object-position: 62%;
+}
+
+#other-three {
+  object-position: 20%;
+}
+
+#blue-four{
+  object-position: 62%;
+}
+
+#blue-five {
+  object-position: 40%;
+}
+
+#other-five {
+  object-position: 32%;
+}
+
+#blue-six {
+  object-position: 55%;
+}
+
+#other-seven {
+  object-position: 70%;
+}
+#blue-eight {
+  object-position: 42%;
 }
